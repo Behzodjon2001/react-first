@@ -1,0 +1,84 @@
+.header_container {
+  background-color: #e5e5e5;
+}
+
+.header_container .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.header_container .container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.header_container .container .card2 .list_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.header_container .container .card3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.header_container .container .sign_in {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  padding: 10px 22px 9px 25px;
+}
+
+.sign_in:hover {
+  background-color: #dfd5d5;
+}
+
+.sign_up {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  padding: 10px 22px 9px 25px;
+  background-color: #02897a;
+  color: white;
+}
+
+.sign_up:hover {
+  background-color: #045a50;
+}
+
+.burger_menu {
+  width: 30px;
+  height: 30px;
+  display: none;
+  border-color: #045a50;
+}
+
+.list_header2 {
+  display: none;
+}
+
+@media screen and (min-width: 268px) and (max-width: 922px) {
+  .header_container .container .card2 {
+    display: none;
+  }
+  .header_container .container .list_header {
+    display: none;
+  }
+  .burger_menu {
+    display: flex;
+  }
+  .burger_menu::after {
+  }
+}
+
+@media screen and (max-width: 563px) {
+  .header_container .container {
+    flex-direction: column;
+  }
+}
